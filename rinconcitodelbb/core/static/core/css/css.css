@@ -1,0 +1,91 @@
+.f {
+  background: #3a9e9e;
+  background: #af4944;
+  background: #eb8531;
+  background: #6b6a65;
+  background: #ffffff;
+  background: #3e95b1;
+  background: #014769;
+}
+
+* {
+  --webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.color {
+  background: #014769;
+}
+
+header .contenedor-texto {
+  display: flex;
+  margin: 110px 0;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+header .contenedor-texto .texto {
+  border: 2px solid #343a40;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+  color: #343a40;
+  font-weight: 300;
+  margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+header .contenedor-texto .texto .apellido {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+footer .redes-sociales {
+  background: #ffffff;
+}
+
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+footer .redes-sociales a {
+  color: #000000;
+  text-align: center;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+footer .redes-sociales .facebook:hover {
+  background: #1da1f2;
+}
+footer .redes-sociales .email:hover {
+  background: #cd201f;
+}
+footer .redes-sociales .whatsapp:hover {
+  background: #16a111;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.397);
+}
