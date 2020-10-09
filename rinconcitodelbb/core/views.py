@@ -17,4 +17,6 @@ def ropa(request):
 
 def maternidad(request):
     return render(request, "core/maternidad.html")
-    
+
+def moños(request):
+    return render(request, "core/moños.html")
