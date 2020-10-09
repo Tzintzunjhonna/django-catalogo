@@ -1,0 +1,48 @@
+{% extends 'core/base.html' %}
+
+{% block background %}{% load static %}{% static 'core/img/portada-maternidad.jpg' %}{% endblock  %}
+
+{% block headers %}
+    <h1 class="m-5">Maternidad</h1>               
+{% endblock  %}
+
+{% block content %}
+<div class="row">  
+            <div class="col-xs-12 col-md-6" style="
+                                            background-image: linear-gradient(rgba(255,255,255,.3), 
+                                            rgba(255,255,255,.3)), 
+                                            url('{% static 'core/img/ropa.jpg' %}');
+                                            no-repeat center center fixed;
+                                            -webkit-background-size: cover;
+                                            -moz-background-size: cover;
+                                            -o-background-size: cover;
+                                            background-size: cover;
+                                            " >
+              <a class="nav-link text-dark" href="#"> 
+                <div class="col-sm-8 align-self-center text-center  contenedor-texto">
+                    <div class="texto">           
+                      <h1 class="m-5">Ropa</h1>            
+                    </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-xs-12 col-md-6" style="
+                                            background-image: linear-gradient(rgba(255,255,255,.3), 
+                                            rgba(255,255,255,.3)), 
+                                            url('{% static 'core/img/accesorios.jpg' %}');
+                                            no-repeat center center fixed;
+                                            -webkit-background-size: cover;
+                                            -moz-background-size: cover;
+                                            -o-background-size: cover;
+                                            background-size: cover;
+                                            " >
+            <a class="nav-link text-dark" href="#"> 
+              <div class="col-sm-8 align-self-center text-center  contenedor-texto">
+                <div class="texto">           
+                  <h1 class="m-5">Accesorios</h1>    
+                </div>
+              </div>
+            </a>
+          </div>
+    </div>  
+{% endblock  %}
