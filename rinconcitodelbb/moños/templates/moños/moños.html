@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Moños |{% endblock  %}
+
+<!--Para no tener problemas poner todo en una sola linea-->
+{% block background %}{% load static %}{% static 'core/img/moños.jpg' %}{% endblock  %}
+
+{% block headers %}
+    <h1>Moños</h1>
+{% endblock  %}
+
+{% block content %}
+
+	{% for moño in moños %}
+		<div class="row">
+				<!-- Proyecto -->
+				<div class="row project">  	
+					<div class="col-lg-3 col-md-4 offset-lg-1">
+						<img class="img-fluid" src="{{moño.image.url}}" alt="">
+					</div>
+					<div class="col-lg-7 col-md-8">
+						<h2 class="section-heading title">{{moño.title}}</h2>   
+					<p>{{moño.description}}</p>
+					<p class="text-danger">$ {{moño.price}} MXN</p>
+
+					</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endblock  %}
