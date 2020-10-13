@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="{% static 'core/css/clean-blog.min.css' %}" rel="stylesheet" />
-    <link rel="stylesheet" href="{% static 'core/css/css.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/css.css' %}"> 
 
 </head>
 <body>
@@ -20,7 +20,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container nav">
-        <a class="navbar-brand text-dark" href="{% url 'home'%}">Rinconcito del bb</a>
+        <a class="navbar-brand titulo" href="{% url 'home'%}">Rinconcito del bb</a>
         <button
           class="navbar-toggler navbar-toggler-right text-dark"
           type="button"
@@ -36,19 +36,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-dark" href="{% url 'home'%}">Inicio</a>
+              <a class="nav-link text-white" href="{% url 'home'%}">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="{% url 'accesorios'%}">Accesorios</a>
+              <a class="nav-link text-white" href="{% url 'accesorios'%}">Accesorios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="{% url 'maternidad'%}">Maternidad</a>
+              <a class="nav-link text-white" href="{% url 'maternidad'%}">Maternidad</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="{% url 'ropa'%}">Ropa</a>
+              <a class="nav-link text-white" href="{% url 'ropa'%}">Ropa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="{% url 'calzado'%}">Calzado</a>
+              <a class="nav-link text-white" href="{% url 'calzado'%}">Calzado</a>
             </li>
           </ul>
         </div>
@@ -57,13 +57,14 @@
 
     <!-- Nombre de tienda-->
     <header class="masthead" style="background-image: url('{% block background %}{%endblock%}')">
+     <div class="overlay"></div>
       <div class="container">
-        <div class="row justify-content-center h-100">
-          <div class="col-sm-8 align-self-center text-center ">
-            <div class=" contenedor-texto">
-              <div class="card-body texto"> 
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <div class="border border-white">
                 {% block headers %}
-                {% endblock  %}          
+                {% endblock  %}
               </div>
             </div>
           </div>

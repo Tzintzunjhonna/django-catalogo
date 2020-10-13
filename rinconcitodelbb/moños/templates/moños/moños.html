@@ -1,4 +1,4 @@
-{% extends 'core/base.html' %}
+{% extends 'core/base_productos.html' %}
 
 {% block title %} Moños |{% endblock  %}
 
@@ -12,19 +12,30 @@
 {% block content %}
 
 	{% for moño in moños %}
-		<div class="row">
-				<!-- Proyecto -->
-				<div class="row project">  	
-					<div class="col-lg-3 col-md-4 offset-lg-1">
-						<img class="img-fluid" src="{{moño.image.url}}" alt="">
+			<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-md-10 mx-auto">
+							<div class="site-heading">
+								<div class="border border-white">
+									<p>
+										<a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+											<img class="img-fluid col-8" src="{{moño.image.url}}" width="100" height="100">
+										</a>
+									</p>
+									<div class="col-lg-7 col-md-8 collapse" id="collapseExample">
+										<div class="card card-body">
+											<h2 class="section-heading title">{{moño.title}}</h2>   
+											<p>{{moño.description}}</p>
+											<p class="text-danger">$ {{moño.price}} MXN</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-7 col-md-8">
-						<h2 class="section-heading title">{{moño.title}}</h2>   
-					<p>{{moño.description}}</p>
-					<p class="text-danger">$ {{moño.price}} MXN</p>
-
-					</div>
+				</div>
 			</div>
-		</div>
+		
 	{% endfor %}
 {% endblock  %}

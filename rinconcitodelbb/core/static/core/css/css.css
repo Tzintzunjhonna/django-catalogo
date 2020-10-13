@@ -13,48 +13,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.color {
-  background: #014769;
-}
 
-header .contenedor-texto {
-  display: flex;
-  margin: 110px 0;
-  background-color: rgba(255, 255, 255, 0.397);
-}
-
-header .contenedor-texto .texto {
-  border: 2px solid #343a40;
-  border-radius: 3px;
-  display: inline-block;
-  text-align: center;
-  padding: 20px 60px;
-}
-
-header .contenedor-texto .texto h1,
-header .contenedor-texto .texto h2 {
-  color: #343a40;
-  font-weight: 300;
-  margin: 0;
-}
-
-header .contenedor-texto .texto .nombre {
-  margin-bottom: 10px;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-header .contenedor-texto .texto .apellido {
-  font-size: 25px;
-  line-height: 25px;
-}
-
-.contenedor {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-}
 
 footer .redes-sociales {
   background: #ffffff;
@@ -86,6 +45,12 @@ footer .redes-sociales .whatsapp:hover {
   background: #16a111;
 }
 
-.nav {
-  background-color: rgba(255, 255, 255, 0.397);
+.titulo{
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .titulo{
+    color: #000000;
+  }
+  
 }

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'moños.apps.MoñosConfig',
+    'biberones.apps.BiberonesConfig',
 ]
 
 MIDDLEWARE = [

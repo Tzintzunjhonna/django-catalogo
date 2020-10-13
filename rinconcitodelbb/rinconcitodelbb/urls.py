@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from core import views as core_views  #importar vista de views
 from moños import views as moños_views
+from biberones import views as biberones_views
+
 
 from django.conf import settings
 
@@ -27,6 +29,7 @@ urlpatterns = [
     path('ropa/', core_views.ropa, name="ropa"),
     path('accesorios/', core_views.accesorios, name="accesorios"),
     path('moños/', moños_views.moños, name="moños"), 
+    path('biberones/', biberones_views.biberones, name="biberones"), 
     path('admin/', admin.site.urls),
 ]
 if settings.DEBUG:

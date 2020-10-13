@@ -1,0 +1,43 @@
+{% extends 'core/base_productos.html' %}
+
+{% block title %} Biberones |{% endblock  %}
+
+<!--Para no tener problemas poner todo en una sola linea-->
+{% block background %}{% load static %}{% static 'core/img/biberones.jpg' %}{% endblock  %}
+
+{% block headers %}
+    <h1>Biberones</h1>
+{% endblock  %}
+
+{% block content %}
+	{% for biberon in biberones %}
+	
+			<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-md-10 mx-auto">
+							<div class="site-heading">
+								<div class="border border-white">
+									<p>
+										<a class="btn" data-toggle="collapse" href="#{{collapse}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+											<img class="img-fluid col-8" src="{{biberon.image.url}}" width="100" height="100">
+										</a>
+									</p>
+									<div class="collapse" id="{{collapse}}">
+										<div class="card card-body">
+											<h2 class="section-heading title">{{biberon.title}}</h2>   
+											<p>{{biberon.description}}</p>
+											<p class="text-danger">$ {{biberon.price}} MXN</p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+	{% endfor %}
+{% endblock  %}

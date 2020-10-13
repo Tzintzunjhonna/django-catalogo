@@ -5,7 +5,7 @@
 {% block background %}{% load static %}{% static 'core/img/portada_accesorio.jpg' %}{% endblock  %}
 
 {% block headers %}
-    <h1 class="m-5">Accesorios</h1>               
+    <h1>Accesorios</h1>               
 {% endblock  %}
 
 {% block content %}
@@ -38,7 +38,7 @@
                                             -o-background-size: cover;
                                             background-size: cover;
                                             " >
-            <a class="nav-link text-dark" href=""> 
+            <a class="nav-link text-dark" href="{% url 'biberones'%}"> 
               <div class="col-sm-8 align-self-center text-center  contenedor-texto">
                 <div class="texto">           
                   <h1 class="m-5">biberones</h1>    
