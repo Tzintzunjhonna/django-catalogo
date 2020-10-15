@@ -11,33 +11,28 @@
 
 {% block content %}
 	{% for biberon in biberones %}
-	
-			<div class="overlay"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-md-10 mx-auto">
-							<div class="site-heading">
-								<div class="border border-white">
-									<p>
-										<a class="btn" data-toggle="collapse" href="#{{collapse}}" role="button" aria-expanded="false" aria-controls="collapseExample">
-											<img class="img-fluid col-8" src="{{biberon.image.url}}" width="100" height="100">
-										</a>
-									</p>
-									<div class="collapse" id="{{collapse}}">
-										<div class="card card-body">
-											<h2 class="section-heading title">{{biberon.title}}</h2>   
-											<p>{{biberon.description}}</p>
-											<p class="text-danger">$ {{biberon.price}} MXN</p>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	<div class="col-md-6">
+		<button type="button" class="text-center btn " data-toggle="modal" data-target="#modal{{ biberon.id }}">
+			<img alt="picture" src="{{ biberon.image.url }}" class="img-fluid">
+		</button>
 
-		
+		<div class="modal fade" id="modal{{ biberon.id }}" tabindex="-1" role="dialog"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">{{ biberon.title}}</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p class="text-justify">{{ biberon.description}}</p>
+					<br>
+					<p class="text-danger ">$ {{biberon.price}} MXN</p>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
 	{% endfor %}
 {% endblock  %}
